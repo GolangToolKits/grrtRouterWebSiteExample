@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>GRRT Router Web Example</h1>
+<p>Product info passed for index page.</p>
+
+<p><a href="/">Home</a></p>
+
+<div style="width: 100%; background: grey;">
+    <label>Product ID = {{.ID}}</label>
+</div>
+
+<div style="width: 100%; background: burlywood;">
+    <label>SKU        = {{.Sku}}</label>
+</div>
+
+
+<p><b>Add a product</b></p>
+<form method="POST" action="/addProduct">
+    <label>Name</label>
+    <input name="name" type="text">
+    <label>Sku</label>
+    <input name="sku" type="text">
+    <button type="submit" >Submit</button>
+</form>
+
+</body>
+</html>
